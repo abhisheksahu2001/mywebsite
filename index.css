@@ -708,11 +708,10 @@ color: white;
     min-height: 165%;
     position: relative;
 }
-canvas{
-    min-width: 160%;
-    min-height: 0;
-    width: 200%;
-    height: 200%;
+.particles-js-canvas-el{
+    display: none;
+   width: 0;
+   height: 0;
 }
 .nav-section{
     z-index: 10;
