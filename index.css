@@ -744,7 +744,7 @@ span{
 }
 .tails,.tails2{
     font-size: 2rem;
-    margin-left: 0;
+    margin-left: -0.5rem;
 }
 .colan1{
     font-size: 2rem;
