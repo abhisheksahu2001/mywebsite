@@ -305,6 +305,69 @@ em{
     background-color: #7FFFD408;
     transition: .5s ease;
 }
+.name1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style-type: none;
+  }
+  
+  .name1 li a {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1px;
+    color: #02AEC6;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-style: normal;
+  }
+  
+  .name1 li a span {
+    position: relative;
+    overflow: hidden;
+    color: #02AEC6;
+    text-transform: capitalize;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    font-style: normal;
+  }
+  
+  .name1 li a span .out {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+  
+  .name1 li a span .in {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  
+  .name1 li a:hover span {
+    color: #7FFFD4;
+  }
+  
+  .name1 li a:hover span .out {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  
+  .name1 li a:hover span .in {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
 .imgbox:hover::after{
     background-color: #7FFFD400;
 }
