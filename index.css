@@ -713,6 +713,7 @@ color: white;
    width: 0;
    height: 0;
 }
+
 .nav-section{
     z-index: 10;
     height: 13rem;
@@ -743,7 +744,7 @@ span{
 }
 .tails,.tails2{
     font-size: 2rem;
-    margin-left: 1.5rem;
+    margin-left: 0;
 }
 .colan1{
     font-size: 2rem;
