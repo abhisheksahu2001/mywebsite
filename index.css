@@ -621,12 +621,13 @@ form {
     flex-direction: column;
     margin-left: 30.3vw;
     color:var(--white);
-    font-style: normal;
+    font-style:normal;
     font-size: 1.5rem;
     font-family: var(--font2);
     font-weight: 500;
 }
 input[type=text], textarea {
+    font-weight: 100;
     width: 45vw;
     background-color: transparent;
     padding: 12px;
@@ -636,6 +637,7 @@ input[type=text], textarea {
     margin-bottom: 16px;
     color: white;
     font-size:1rem ;
+    font-family: var(--font2);
 }
 input[type=email], textarea {
     width: 45vw;
@@ -647,9 +649,11 @@ input[type=email], textarea {
     margin-bottom: 16px;
     color: white;
     font-size:1rem ;
+    font-family: var(--font2);
 }
 ::placeholder{
 color: white;
+font-weight: 100;
 }
   
   input[type=submit] {
