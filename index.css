@@ -25,7 +25,9 @@
     0% { left:0;width: 0; }
     50% { left:0;width: 50%; }
     }
-
+*{
+    user-select:none;
+}
 
 html{
     scroll-behavior: smooth;
