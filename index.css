@@ -25,9 +25,7 @@
     0% { left:0;width: 0; }
     50% { left:0;width: 50%; }
     }
-*{
-    user-select:none;
-}
+
 
 html{
     scroll-behavior: smooth;
@@ -74,10 +72,10 @@ body::-webkit-scrollbar-thumb{
     height: 296vh;
 }
 .progress{
-    transition: width  .09s ease;
+    transition: width  .05s ease-in-out;
     background-color: var(--green);
     height: 100%;
-    width: 0%;
+    width: 0px;
 }
 #particle {
     width: 100%;
@@ -708,149 +706,20 @@ font-weight: 100;
     left:57.2vw;
     width: 42vw;
 }
-@media (max-width:1026px)  {
-    #container{
-        height: 563vh;
-    }
-    .nav-section{
-        height: 100%;
-    }
-    .page2{
-        min-width: 105%;
-        top: 120%;
-    }
-    .info{
-        margin-left: 40vw;
-    }
-    .skills {
-        display: flex;
-        padding: 0vh,0vw,0vh ,1vw;
-    }
-    .proimg{
-        width: 33.3%;
-    }
-
-    .proimg h1{
-        padding-left: 35%;
-    }
-    .proimg img{
-        width: 56%;
-    margin-left: 28%;
-
-    }
-    .proimg h1{
-        font-size: 2rem;
-    }
-    .pera2{
-        padding-top: 4%;
-        width: 30%;
-        margin-left: 8%;
-    }
-    .pera2 p{
-    padding: 0;
-    width: 100%;
-    margin-top: 6%;
-    margin-left: 0;
-    font-size: 1.6rem;
-    }
-    .skill-wrapper{
-        width: 100%;
-    }
-    form{
-        margin-left: 30%;
-        font-size: 1.2rem;
-        position: relative;
-        width: 60%;
-    }
-    input[type=text], textarea {
-        width: 60%;
-        font-size:1.2rem ;
-    }
-    input[type=email], textarea {
-        width: 60%;
-        font-size:1.2rem ;
-    }
-    .container5{
-        position: relative;
-        top: auto;
-        width: 100%;
-    }
-      
-    input[type=submit] {
-          font-size: 1.2rem;
-          width: 20%;
-          height: 3rem;
-      }
-    .projects{
-        position: relative;
-        flex-direction: column;
-        width: 100%;
-        margin:0 ;
-    }
-    .project{
-        margin: 4rem 14rem;
-        width: 67%;
-        height: auto;
-    }
-    .project img{
-        width: 70vw;
-    }
-    .project .bi-github{
-        top: 1rem;
-        margin-left: 54px;
-    }
-    .project .bi-github1{
-        top: 1rem;
-        margin-left: 190px;
-    }
-    .project svg{
-        width: 3rem;
-        height: 3rem;
-    }
-    .page2 .aboutheading{
-        padding-left: 45%;
-        width: 25%;
-    
-    }
-    .page2 .aboutheading::after{
-        display: none;
-    
-    
-    }
-    .aboutheading::before{
-        display: none;
-    }
-   
-    .contactheading::after{
-        display: none;
-    }
-    .contactheading::before{
-        display: none;
-    }
-    .projectheading{
-        padding-left: 45%;
-        width: 25%;
-    }
-    .projectheading::after{
-    display: none;
-    }
-    .projectheading::before{
-        display: none;
-    }
-}
 
 @media (max-width:600px) {
 #particle{
-    min-height: 160%;
+    min-height: 165%;
     position: relative;
 }
 .particles-js-canvas-el{
     display: none;
-   
+   width: 0;
+   height: 0;
 }
 
 .nav-section{
-    z-index: 1;
+    z-index: 10;
     height: 13rem;
     display: flex;
     position: fixed;
@@ -1054,7 +923,7 @@ input[type=email], textarea {
       height: 7rem;
   }
 }
-/* @media  (max-width:1026px){
+@media (min-width:605px) and (max-width:1026px){
 #particle{
     min-height: 100%;
     }
@@ -1234,4 +1103,134 @@ input[type=email], textarea {
       height: 7rem;
   }
 
-} */
+}
+@media (min-width:1026px) and (max-width:1690px) {
+    #container{
+        height: 563vh;
+    }
+    .nav-section{
+        height: 100%;
+    }
+    .page2{
+        min-width: 105%;
+        top: 120%;
+    }
+    .info{
+        margin-left: 40vw;
+    }
+    .skills {
+        display: flex;
+        padding: 0vh,0vw,0vh ,1vw;
+    }
+    .proimg{
+        width: 33.3%;
+    }
+
+    .proimg h1{
+        padding-left: 35%;
+    }
+    .proimg img{
+        width: 56%;
+    margin-left: 28%;
+
+    }
+    .proimg h1{
+        font-size: 2rem;
+    }
+    .pera2{
+        padding-top: 4%;
+        width: 30%;
+        margin-left: 8%;
+    }
+    .pera2 p{
+    padding: 0;
+    width: 100%;
+    margin-top: 6%;
+    margin-left: 0;
+    font-size: 1.6rem;
+    }
+    .skill-wrapper{
+        width: 100%;
+    }
+    form{
+        margin-left: 30%;
+        font-size: 1.2rem;
+        position: relative;
+        width: 60%;
+    }
+    input[type=text], textarea {
+        width: 60%;
+        font-size:1.2rem ;
+    }
+    input[type=email], textarea {
+        width: 60%;
+        font-size:1.2rem ;
+    }
+    .container5{
+        position: relative;
+        top: auto;
+        width: 100%;
+    }
+      
+    input[type=submit] {
+          font-size: 1.2rem;
+          width: 20%;
+          height: 3rem;
+      }
+    .projects{
+        position: relative;
+        flex-direction: column;
+        width: 100%;
+        margin:0 ;
+    }
+    .project{
+        margin: 4rem 14rem;
+        width: 67%;
+        height: auto;
+    }
+    .project img{
+        width: 70vw;
+    }
+    .project .bi-github{
+        top: 1rem;
+        margin-left: 54px;
+    }
+    .project .bi-github1{
+        top: 1rem;
+        margin-left: 190px;
+    }
+    .project svg{
+        width: 3rem;
+        height: 3rem;
+    }
+    .page2 .aboutheading{
+        padding-left: 45%;
+        width: 25%;
+    
+    }
+    .page2 .aboutheading::after{
+        display: none;
+    
+    
+    }
+    .aboutheading::before{
+        display: none;
+    }
+   
+    .contactheading::after{
+        display: none;
+    }
+    .contactheading::before{
+        display: none;
+    }
+    .projectheading{
+        padding-left: 45%;
+        width: 25%;
+    }
+    .projectheading::after{
+    display: none;
+    }
+    .projectheading::before{
+        display: none;
+    }
+}
